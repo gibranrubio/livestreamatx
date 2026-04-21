@@ -1,0 +1,348 @@
+export default function LiveStreamATXLandingPage() {
+  const howItWorks = [
+    {
+      number: '01',
+      title: 'Tell us the moment',
+      body:
+        'A launch, event, founder interview, community night, or brand activation. We shape the livestream around what you want people to pay attention to.',
+    },
+    {
+      number: '02',
+      title: 'We produce it live',
+      body:
+        'We handle the on-site IRL livestream setup, audio, cameras, switching, pacing, and real-time support so your team can stay present.',
+    },
+    {
+      number: '03',
+      title: 'The distribution keeps going',
+      body:
+        'After the stream, the moment turns into clips, posts, recaps, and proof that keeps working across social.',
+    },
+  ];
+
+  const useCases = [
+    'Founder interviews',
+    'Product launches',
+    'Store openings',
+    'Events & panels',
+    'Podcasts',
+    'Community nights',
+    'Real estate tours',
+    'Brand activations',
+  ];
+
+  const benefits = [
+    {
+      title: 'Live creates urgency',
+      body:
+        'People care more when they know something is happening now. That urgency is hard to recreate later in a recap.',
+    },
+    {
+      title: 'One stream becomes many assets',
+      body:
+        'A livestream can become short-form clips, posts, teasers, recap content, and proof you can keep using after the event ends.',
+    },
+    {
+      title: 'It feels more real',
+      body:
+        'Live moments carry energy. They feel less staged, more current, and more trustworthy than polished content alone.',
+    },
+  ];
+
+  const audiences = [
+    'Founders',
+    'Creators',
+    'Restaurants',
+    'Retail brands',
+    'Agencies',
+    'Fitness communities',
+    'Events',
+    'Anything local',
+  ];
+
+  const pricing = [
+    {
+      name: 'Starter',
+      price: '$1,000+',
+      description: 'A clean way to test live without overcomplicating it.',
+      features: ['Single livestream', 'On-site production', 'Basic content capture'],
+      featured: false,
+    },
+    {
+      name: 'Campaign',
+      price: '$2,500+',
+      description: 'For brands that want live reach and strong post-event distribution.',
+      features: ['Livestream + clips', 'Real-time event support', 'Post-event recap assets'],
+      featured: true,
+    },
+    {
+      name: 'Monthly',
+      price: 'Custom',
+      description: 'For teams building a consistent media and attention engine.',
+      features: ['Recurring live content', 'Priority calendar', 'Built for ongoing distribution'],
+      featured: false,
+    },
+  ];
+
+  const faqs = [
+    {
+      q: 'What do you handle?',
+      a: 'We handle the livestream production workflow: setup, cameras, audio, switching, and capturing content that can be reused afterward.',
+    },
+    {
+      q: 'Do I need a large audience already?',
+      a: 'No. Live works for events, launches, interviews, openings, and community moments even if your audience is still growing.',
+    },
+    {
+      q: 'Do you also make clips?',
+      a: 'Yes. The goal is not only to stream. It is to turn the live moment into repeatable distribution afterward.',
+    },
+    {
+      q: 'Why not just film and post later?',
+      a: 'Because live creates urgency, reactions, and social proof in the moment. Then the clips keep compounding after.',
+    },
+  ];
+
+  return (
+    <div className="min-h-screen bg-[#f6f1e7] text-[#171717] antialiased">
+      <header className="sticky top-0 z-50 border-b border-black/8 bg-[#f6f1e7]/90 backdrop-blur-md">
+        <div className="mx-auto flex max-w-[1120px] items-center justify-between px-5 py-4 sm:px-8 lg:px-10">
+          <a href="#top" className="text-[15px] font-medium tracking-[-0.02em] text-black/90">
+            Live Stream ATX
+          </a>
+
+          <nav className="hidden items-center gap-7 text-[15px] text-black/60 md:flex">
+            <a href="#how-it-works" className="transition hover:text-black">How it works</a>
+            <a href="#use-cases" className="transition hover:text-black">Use cases</a>
+            <a href="#pricing" className="transition hover:text-black">Pricing</a>
+            <a href="#faq" className="transition hover:text-black">FAQ</a>
+          </nav>
+
+          <a
+            href="#contact"
+            className="rounded-full bg-black px-4 py-2.5 text-sm font-medium text-white transition hover:opacity-90"
+          >
+            Book a call
+          </a>
+        </div>
+      </header>
+
+      <main id="top">
+        <section className="px-5 pb-20 pt-24 sm:px-8 sm:pb-28 sm:pt-32 lg:px-10">
+          <div className="mx-auto max-w-[980px] text-center">
+            <p className="text-[14px] font-medium tracking-[-0.01em] text-black/50">
+              Austin livestream production for founders, creators, and local brands
+            </p>
+
+            <h1 className="mx-auto mt-6 max-w-[900px] text-[48px] font-semibold leading-[0.95] tracking-[-0.05em] text-black sm:text-[68px] lg:text-[84px]">
+              Make the moment matter while it’s happening.
+            </h1>
+
+            <p className="mx-auto mt-7 max-w-[700px] text-[19px] leading-[1.7] text-black/65 sm:text-[20px]">
+              We help Austin businesses turn events, launches, interviews, and activations into real-time distribution through IRL livestreams and clip-ready media.
+            </p>
+
+            <div className="mt-10 flex flex-col items-center justify-center gap-3 sm:flex-row">
+              <a
+                href="#contact"
+                className="rounded-full bg-black px-6 py-3.5 text-sm font-medium text-white transition hover:opacity-90"
+              >
+                Start a project
+              </a>
+              <a
+                href="#how-it-works"
+                className="rounded-full border border-black/10 bg-transparent px-6 py-3.5 text-sm font-medium text-black transition hover:bg-black/[0.03]"
+              >
+                See how it works
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <section id="how-it-works" className="border-t border-black/8 px-5 py-20 sm:px-8 sm:py-24 lg:px-10">
+          <div className="mx-auto max-w-[1120px]">
+            <div className="max-w-[640px]">
+              <p className="text-[14px] font-medium text-black/50">How it works</p>
+              <h2 className="mt-3 text-[38px] font-semibold leading-[1.02] tracking-[-0.04em] text-black sm:text-[52px]">
+                Simple to book. Sharp in execution.
+              </h2>
+            </div>
+
+            <div className="mt-16 grid gap-14 md:grid-cols-3 md:gap-10">
+              {howItWorks.map((item) => (
+                <div key={item.number} className="max-w-[320px]">
+                  <div className="text-[14px] font-medium text-black/40">{item.number}</div>
+                  <h3 className="mt-4 text-[27px] font-semibold leading-[1.1] tracking-[-0.03em] text-black">
+                    {item.title}
+                  </h3>
+                  <p className="mt-4 text-[17px] leading-[1.8] text-black/65">{item.body}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section id="use-cases" className="border-t border-black/8 px-5 py-20 sm:px-8 sm:py-24 lg:px-10">
+          <div className="mx-auto max-w-[1120px]">
+            <div className="max-w-[720px]">
+              <p className="text-[14px] font-medium text-black/50">Use cases</p>
+              <h2 className="mt-3 text-[38px] font-semibold leading-[1.02] tracking-[-0.04em] text-black sm:text-[52px]">
+                Built for any moment that deserves more than a recap post.
+              </h2>
+            </div>
+
+            <div className="mt-14 grid grid-cols-2 gap-x-10 gap-y-5 text-[18px] tracking-[-0.02em] sm:grid-cols-3 lg:grid-cols-4">
+              {useCases.map((item) => (
+                <div key={item} className="border-b border-black/10 pb-3 text-black/80">
+                  {item}
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section className="border-t border-black/8 px-5 py-20 sm:px-8 sm:py-24 lg:px-10">
+          <div className="mx-auto max-w-[1120px]">
+            <div className="max-w-[720px]">
+              <p className="text-[14px] font-medium text-black/50">Why live</p>
+              <h2 className="mt-3 text-[38px] font-semibold leading-[1.02] tracking-[-0.04em] text-black sm:text-[52px]">
+                The moat is not just content. It’s showing up in real time.
+              </h2>
+            </div>
+
+            <div className="mt-16 grid gap-14 md:grid-cols-3 md:gap-10">
+              {benefits.map((item) => (
+                <div key={item.title} className="max-w-[320px]">
+                  <h3 className="text-[27px] font-semibold leading-[1.1] tracking-[-0.03em] text-black">
+                    {item.title}
+                  </h3>
+                  <p className="mt-4 text-[17px] leading-[1.8] text-black/65">{item.body}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section className="border-t border-black/8 px-5 py-20 sm:px-8 sm:py-24 lg:px-10">
+          <div className="mx-auto max-w-[1120px]">
+            <div className="max-w-[720px]">
+              <p className="text-[14px] font-medium text-black/50">Who it’s for</p>
+              <h2 className="mt-3 text-[38px] font-semibold leading-[1.02] tracking-[-0.04em] text-black sm:text-[52px]">
+                For brands that want people paying attention before the event is over.
+              </h2>
+            </div>
+
+            <div className="mt-14 grid grid-cols-2 gap-x-10 gap-y-5 text-[18px] tracking-[-0.02em] sm:grid-cols-3 lg:grid-cols-4">
+              {audiences.map((item) => (
+                <div key={item} className="border-b border-black/10 pb-3 text-black/80">
+                  {item}
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section id="pricing" className="border-t border-black/8 px-5 py-20 sm:px-8 sm:py-24 lg:px-10">
+          <div className="mx-auto max-w-[1120px]">
+            <div className="max-w-[720px]">
+              <p className="text-[14px] font-medium text-black/50">Pricing</p>
+              <h2 className="mt-3 text-[38px] font-semibold leading-[1.02] tracking-[-0.04em] text-black sm:text-[52px]">
+                Start lean. Scale when live becomes core to your distribution.
+              </h2>
+            </div>
+
+            <div className="mt-16 grid gap-5 lg:grid-cols-3">
+              {pricing.map((plan) => (
+                <div
+                  key={plan.name}
+                  className={`rounded-[28px] border p-8 ${
+                    plan.featured
+                      ? 'border-black bg-black text-white'
+                      : 'border-black/8 bg-white/35 text-black'
+                  }`}
+                >
+                  <div className={`text-[14px] font-medium ${plan.featured ? 'text-white/55' : 'text-black/45'}`}>
+                    {plan.name}
+                  </div>
+                  <div className="mt-3 text-[42px] font-semibold leading-none tracking-[-0.04em]">
+                    {plan.price}
+                  </div>
+                  <p className={`mt-4 text-[16px] leading-7 ${plan.featured ? 'text-white/70' : 'text-black/60'}`}>
+                    {plan.description}
+                  </p>
+                  <ul className="mt-7 space-y-3">
+                    {plan.features.map((feature) => (
+                      <li key={feature} className="flex items-start gap-3 text-[15px] leading-7">
+                        <span className={`mt-3 h-1.5 w-1.5 rounded-full ${plan.featured ? 'bg-white' : 'bg-black'}`} />
+                        <span className={plan.featured ? 'text-white/82' : 'text-black/72'}>{feature}</span>
+                      </li>
+                    ))}
+                  </ul>
+                  <a
+                    href="#contact"
+                    className={`mt-8 inline-flex rounded-full px-5 py-3 text-sm font-medium transition hover:opacity-90 ${
+                      plan.featured
+                        ? 'bg-white text-black'
+                        : 'bg-black text-white'
+                    }`}
+                  >
+                    Book a call
+                  </a>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section id="faq" className="border-t border-black/8 px-5 py-20 sm:px-8 sm:py-24 lg:px-10">
+          <div className="mx-auto max-w-[1120px]">
+            <div className="max-w-[720px]">
+              <p className="text-[14px] font-medium text-black/50">FAQ</p>
+              <h2 className="mt-3 text-[38px] font-semibold leading-[1.02] tracking-[-0.04em] text-black sm:text-[52px]">
+                The honest answers.
+              </h2>
+            </div>
+
+            <div className="mt-14 border-t border-black/10">
+              {faqs.map((faq) => (
+                <details key={faq.q} className="group border-b border-black/10 py-6">
+                  <summary className="flex cursor-pointer list-none items-center justify-between gap-6 text-[22px] font-medium leading-[1.2] tracking-[-0.03em] text-black">
+                    <span>{faq.q}</span>
+                    <span className="text-black/35 transition group-open:rotate-45">+</span>
+                  </summary>
+                  <p className="mt-4 max-w-[760px] text-[17px] leading-[1.8] text-black/65">{faq.a}</p>
+                </details>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section id="contact" className="border-t border-black/8 px-5 py-20 sm:px-8 sm:py-28 lg:px-10">
+          <div className="mx-auto max-w-[860px] text-center">
+            <p className="text-[14px] font-medium text-black/50">Your first livestream is one call away</p>
+            <h2 className="mx-auto mt-4 max-w-[820px] text-[42px] font-semibold leading-[0.98] tracking-[-0.05em] text-black sm:text-[58px] lg:text-[68px]">
+              Your next event should keep working after the room clears.
+            </h2>
+            <p className="mx-auto mt-6 max-w-[680px] text-[19px] leading-[1.7] text-black/65">
+              Let’s build a livestream that gives your event real-time reach and post-event content that still has something to say tomorrow.
+            </p>
+            <div className="mt-10 flex flex-col items-center justify-center gap-3 sm:flex-row">
+              <a
+                href="mailto:hello@livestreamatx.com"
+                className="rounded-full bg-black px-6 py-3.5 text-sm font-medium text-white transition hover:opacity-90"
+              >
+                hello@livestreamatx.com
+              </a>
+              <a
+                href="https://cal.com"
+                className="rounded-full border border-black/10 px-6 py-3.5 text-sm font-medium text-black transition hover:bg-black/[0.03]"
+              >
+                Open calendar
+              </a>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+  );
+}
