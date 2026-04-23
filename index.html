@@ -225,6 +225,32 @@
         color: var(--muted);
       }
 
+      .stat-grid {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 1px;
+        background: rgba(0,0,0,0.08);
+        border: 1px solid rgba(0,0,0,0.08);
+        border-radius: 20px;
+        overflow: hidden;
+      }
+      .stat-cell {
+        background: var(--bg);
+        padding: 28px 24px;
+      }
+      .stat-number {
+        font-size: clamp(36px, 5vw, 52px);
+        font-weight: 600;
+        line-height: 1;
+        letter-spacing: -0.05em;
+      }
+      .stat-label {
+        margin-top: 8px;
+        font-size: 14px;
+        line-height: 1.5;
+        color: var(--muted);
+      }
+
       .list-grid {
         display: grid;
         grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -502,8 +528,23 @@
             <p class="section-label">What this is</p>
             <h2 class="section-title">Not a bloated agency.<br />A fast way to go live.</h2>
           </div>
-          <div class="two-col-copy">
-            Live streaming is becoming one of the strongest moats in media and brand building. People want to react in real time, post in real time, and watch moments as they happen. I help Austin businesses capture that attention without building the system from scratch.
+          <div class="stat-grid">
+            <div class="stat-cell">
+              <div class="stat-number">3×</div>
+              <div class="stat-label">longer watch time vs. recorded video</div>
+            </div>
+            <div class="stat-cell">
+              <div class="stat-number">6×</div>
+              <div class="stat-label">more interactions than regular video posts</div>
+            </div>
+            <div class="stat-cell">
+              <div class="stat-number">82%</div>
+              <div class="stat-label">of audiences prefer live over social posts</div>
+            </div>
+            <div class="stat-cell">
+              <div class="stat-number">$100M</div>
+              <div class="stat-label">what a daily live show sold for after 17 months</div>
+            </div>
           </div>
         </div>
       </section>
