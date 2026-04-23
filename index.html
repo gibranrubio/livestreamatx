@@ -225,6 +225,28 @@
         color: var(--muted);
       }
 
+      .section-pullquote {
+        margin-top: 28px;
+        padding-top: 28px;
+        border-top: 1px solid var(--line);
+        max-width: 460px;
+      }
+      .section-pullquote blockquote {
+        margin: 0;
+        font-size: clamp(17px, 2vw, 20px);
+        font-style: italic;
+        line-height: 1.65;
+        color: var(--text);
+        letter-spacing: -0.02em;
+      }
+      .section-pullquote cite {
+        display: block;
+        margin-top: 12px;
+        font-size: 13px;
+        font-style: normal;
+        color: var(--muted-2);
+      }
+
       .stat-grid {
         display: grid;
         grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -532,28 +554,32 @@
         <div class="container two-col">
           <div>
             <p class="section-label">What this is</p>
-            <h2 class="section-title">Go live once.<br />Post all week.</h2>
+            <h2 class="section-title">The clip economy<br />is already here.</h2>
+          <div class="section-pullquote">
+            <blockquote>"I don't know what live streaming will do for you — but I know it's cool."</blockquote>
+            <cite>— Mark Zuckerberg, on Facebook Live</cite>
+          </div>
           </div>
           <div class="stat-grid">
             <div class="stat-cell">
-              <div class="stat-number">3×</div>
-              <div class="stat-label">longer watch time vs. recorded video</div>
-              <div class="stat-source">Facebook Live data, Meta</div>
+              <div class="stat-number">$20M</div>
+              <div class="stat-label">TBPN ad revenue — built going live daily, not from polished production</div>
+              <div class="stat-source">Evan Armstrong, @itsurboyevan · Apr 2026</div>
+            </div>
+            <div class="stat-cell">
+              <div class="stat-number">$4.7M</div>
+              <div class="stat-label">one midroll slot on AcquiredFM — niche B2B audiences command prices agencies dream of</div>
+              <div class="stat-source">AcquiredFM partnership deck, Apr 2026</div>
+            </div>
+            <div class="stat-cell">
+              <div class="stat-number">3</div>
+              <div class="stat-label">YouTube channels HubSpot acquired in April 2026 — big money is buying media audiences</div>
+              <div class="stat-source">Pat Walls, @thepatwalls · Apr 2026</div>
             </div>
             <div class="stat-cell">
               <div class="stat-number">6×</div>
-              <div class="stat-label">more interactions than regular video posts</div>
+              <div class="stat-label">more interactions on live video vs. regular posts</div>
               <div class="stat-source">Facebook Live data, Meta</div>
-            </div>
-            <div class="stat-cell">
-              <div class="stat-number">82%</div>
-              <div class="stat-label">of audiences prefer live over social posts</div>
-              <div class="stat-source">Livestream × New York Magazine</div>
-            </div>
-            <div class="stat-cell">
-              <div class="stat-number">$100M</div>
-              <div class="stat-label">exit built on daily clips — TBPN averaged 200 live viewers and clipped their way to a $100M acquisition</div>
-              <div class="stat-source">The Information, April 2026</div>
             </div>
           </div>
         </div>
